@@ -6,6 +6,8 @@ For example UiEasyStarter allows to create Java project to test WebUI.
 The project contain connected Selenium2, ReportNG (with wrapper to make screenshot on test failure), slf4j with logback-classic,
 PageObject example, WebDriver factory, etc.
 
+Detailed description what is archetype you can find out here: https://maven.apache.org/guides/introduction/introduction-to-archetypes.html
+
 How to rebuild:
 Start point is project dir (for example UiEasyStarter placed),
 mvn clean,
