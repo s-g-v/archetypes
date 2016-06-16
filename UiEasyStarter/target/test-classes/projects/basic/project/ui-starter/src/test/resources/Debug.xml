@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="2" data-provider-thread-count="1" parallel="tests" thread-count="1">
+	<listeners>
+		<listener class-name="reporting.ScreenshotHTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+
+	<test name="Debug test">
+	<parameter name="BrowserName" value="FIREFOX"/>
+		<classes>
+		    <class name="functional.MainPageTest">
+				<methods>
+        			<include name="open" />
+      			</methods>
+      		</class>
+		</classes>
+	</test>
+</suite>
